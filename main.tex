@@ -8,8 +8,8 @@
 %%                           1 of ??                                  %%
 %%                                                                    %%
 %% at the bottom of your first page, this means that the AUX file     %%
-%% was not available when you ran LaTeX on this source. Simply RERUN  %% 
-%% LaTeX to get the ``??'' replaced with the number of the last page  %% 
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
 %% of the document. The AUX file will be generated on the first run   %%
 %% of LaTeX and used on the second run to fill in all of the          %%
 %% references.                                                        %%
@@ -176,7 +176,7 @@
 \newcommand{\blankline}{\quad\pagebreak[2]}
 
 %%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% TODO Make all this into a .cls file to clean things up a bit
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -187,14 +187,14 @@
 % NOTE: Mind where the & separators and \\ breaks are in the following
 %       table.
 %
-% ALSO: \rcollength is the width of the right column of the table 
+% ALSO: \rcollength is the width of the right column of the table
 %       (adjust it to your liking; default is 1.85in).
 %
 \newlength{\rcollength}\setlength{\rcollength}{2.50in}%
 %
 %
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-%\href{https://www.chem.uci.edu/} 
+%\href{https://www.chem.uci.edu/}
 {University of California, Irvine} & \\
 Chemistry Dept., Natural Sciences II              & \textit{Voice:} (616) 920-2679\\
 Irvine, CA 92617        & \textit{E-mail:}
@@ -221,9 +221,9 @@ Irvine, CA 92617        & \textit{E-mail:}
 \begin{outerlist}
 
 %\href{http://www.place.edu/your_major}
-\item[] Ph.D., {Organic Chemistry}, September 2012 -- Present
+\item[] Ph.D., {Organic Chemistry}, September 2012 -- May 2018 (anticipated)
 	\begin{innerlist}
-%		\item {\bf Thesis Title}: 
+%		\item {\bf Thesis Title}:
 	       \item {\bf Thesis Advisor}: Associate Professor Jennifer Prescher
        \end{innerlist}
 \end{outerlist}
@@ -250,14 +250,14 @@ Irvine, CA 92617        & \textit{E-mail:}
 \section{Research Experience}
 %
 %\href{http://www.job1.com}
-{\textbf{University of California, Irvine}}, 
+{\textbf{University of California, Irvine}},
 Irvine, CA
 \begin{outerlist}
 \item[] Under Professor Jennifer A. Prescher	\hfill 	\textbf{May 2014 -- Present}
 	\begin{innerlist}
 	\item \textit{Building better bioluminescent reporters via ab initio calculations} (2014)
 	\item \textit{Orthogonal luciferase--luciferin pairs for bioluminescence imaging} (February 2015 -- November 2016)
-	\item \textit{Engineering mutually orthogonal enzyme-substrate pairs for bioluminescence imaging} (November 2016 -- Present)
+	\item \textit{Engineering mutually orthogonal enzyme-substrate pairs for bioluminescence imaging} (November 2016 -- Present) % TODO update this date and add a new research area??
 	\end{innerlist}
 \item[] Under Professor Vy M. Dong	\hfill 	\textbf{December 2012 -- May 2014}
 	\begin{innerlist}
@@ -272,7 +272,7 @@ Irvine, CA
 {\textbf{Hope College}},
 Holland, MI
 \begin{outerlist}
-\item[] Under Professor Jeffrey B. Johnson    \hfill  \textbf{2010 -- 2012} 
+\item[] Under Professor Jeffrey B. Johnson    \hfill  \textbf{2010 -- 2012}
 	\begin{innerlist}
 	\item \textit{Kinetic investigation of C-C bond activation in quinolinyl ketones} (2010)
 	\item \textit{Observing the effects of ligand modification on C-C bond activation} (2011)
@@ -286,7 +286,7 @@ Holland, MI
 {\textbf{University of Buenos Aires}},
 Buenos Aires, Agentina
 \begin{outerlist}
-\item[] Under Professor Fabio Doctorovich    \hfill  \textbf{Summer 2011} 
+\item[] Under Professor Fabio Doctorovich    \hfill  \textbf{Summer 2011}
 	\begin{innerlist}
 	\item \textit{Synthesis of an electron-poor, water-soluble porphyrin for the isolation of HNO}
 	\end{innerlist}
@@ -296,7 +296,7 @@ Buenos Aires, Agentina
 \blankline %----------------------------------------------------------------
 \vspace{-.125in}
 
-\section{Selected \\Honors\\ \& Awards} 
+\section{Selected \\Honors\\ \& Awards}
 %
 {\textbf{National Science Foundation}}
 \begin{innerlist}
@@ -347,7 +347,7 @@ Buenos Aires, Agentina
 \vspace{-20pt}
 \begin{enumerate}
 \setcounter{enumi}{9} % THE NUMBER OF PUBLICATIONS YOU HAVE
-\ssitem \underline{Rathbun, C. M.}*; Porterfield, W. B.*; Jones, K. A.*; Sagoe, M. J.; Reyes, M. R.; Hua, C. T.; Prescher, J. A. ``Parallel screening for rapid identification of orthogonal bioluminescent tools." \textit{ACS Cent. Sci. Accepted}.
+\ssitem \underline{Rathbun, C. M.}*; Porterfield, W. B.*; Jones, K. A.*; Sagoe, M. J.; Reyes, M. R.; Hua, C. T.; Prescher, J. A. ``Parallel screening for rapid identification of orthogonal bioluminescent tools." \textit{ACS Cent. Sci.}, \textbf{2017}, \textit{3}, 1254.
 
 \ssitem \underline{Rathbun, C. M.}; Prescher, J. A. ``Bioluminescent Probes for Imaging Biology Beyond the Culture Dish." \textit{Biochemistry}, \textbf{2017}, \textit{56}, 5178. \textit{Invited review}.
 
@@ -369,6 +369,8 @@ Buenos Aires, Agentina
 %
 \vspace{-20pt}
 \begin{outerlist}
+\item[] Rathbun, C. M. \textit{Engineered luciferase-luciferin pairs for multicomponent bioluminescence imaging}. Janelia, Andover, NH, June 11--16, 2017. (poster) % TODO update this with the relevant info for Janelia.
+
 \item[] Rathbun, C. M. \textit{Engineered luciferase-luciferin pairs for multicomponent bioluminescence imaging}. Gordon Research Conference: Bioorganic Chemistry, Andover, NH, June 11--16, 2017. (poster)
 
 \item[] Rathbun, C. M. \textit{Using the firefly to illuminate cancer}. Grad Slam Finals Competition (T.E.D.--style talk), U.C. Irvine, April 11, 2017. (oral)
@@ -388,7 +390,7 @@ Buenos Aires, Agentina
 \section{Teaching Experience}
 %
 %\href{http://www.job1.com}
-{\textbf{University of California, Irvine}}, 
+{\textbf{University of California, Irvine}},
 Irvine, CA
 \begin{outerlist}
 \item[] \textit{Mentor to Undergraduate Researchers}	\hfill 	\textbf{January 2015 -- Present}
@@ -413,7 +415,7 @@ Irvine, CA
 {\textbf{Hope College}},
 Holland, MI
 \begin{outerlist}
-\item[] \textit{Teaching Assistant}    \hfill  \textbf{2009 -- 2012} 
+\item[] \textit{Teaching Assistant}    \hfill  \textbf{2009 -- 2012}
 	\begin{innerlist}
 	\item Oversaw undergraduates in general and organic chemistry labs. Lead workshops for organic and physical chemistry lecture classes.
 	\end{innerlist}
@@ -427,7 +429,7 @@ Holland, MI
 \item[] \textbf{HTML/CSS}: Developed static lab group website from the ground-up. Implemented liquid templating engine for easy future updates.
 \item[] \textbf{\LaTeX}: Used for all major long-form graduate school documents.
 \item[] \textbf{Java}: Working knowledge.
-\item[] \textbf{Basic knowledge}: JavaScript, Unix Shell, Ruby. 
+\item[] \textbf{Basic knowledge}: JavaScript, Unix Shell, Ruby.
 \end{outerlist}
 
 \section{Languages}
