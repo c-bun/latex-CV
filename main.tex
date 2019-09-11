@@ -84,7 +84,7 @@
 %
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
-\pagestyle{empty} % Uncomment this to get rid of page numbers
+%\pagestyle{empty} % Uncomment this to get rid of page numbers
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset{\marginparsep+\marginparwidth}
 \newlength{\footpageshift}
@@ -175,8 +175,9 @@
 %    \textbf{\Large CURRICULUM VITAE}
 {\hspace*{-\marginparsep minus \marginparwidth}%
  \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
-   \centering
-        \textbf{\Large CURRICULUM VITAE}
+	 \makeheading{Colin M. Rathbun}
+%   \centering
+%        \textbf{\Large CURRICULUM VITAE}
  \end{minipage}}
 
 \section{Contact Information}
@@ -195,7 +196,7 @@
 \textbf{Colin M. Rathbun} & \\
 {University of Colorado, Boulder} & \\
 BioFrontiers Institute              & \textit{Voice:} (616) 920-2679\\
-Boulder, CO 80304        & \textit{E-mail:}
+Boulder, CO 80303        & \textit{E-mail:}
 			 \href{mailto:colin.rathbun@colorado.edu}{colin.rathbun@colorado.edu}\\
 \end{tabular}
 %
@@ -304,8 +305,10 @@ Buenos Aires, Agentina
 
 \end{outerlist}
 
-\blankline %----------------------------------------------------------------
-\vspace{-.125in}
+%\blankline %----------------------------------------------------------------
+%\vspace{-.125in}
+\newpage\makeheading{Colin M. Rathbun}
+\vspace{6pt}
 
 \section{Selected \\Honors\\ \& Awards}
 %
@@ -362,6 +365,7 @@ Buenos Aires, Agentina
 \section{Peer-Reviewed Publications}
 %
 \vspace{-20pt}
+\newcounter{saveenum}
 \begin{enumerate}
 \setcounter{enumi}{11} % THE NUMBER OF PUBLICATIONS YOU HAVE
 \ssitem \underline{Rathbun, C. M.}; Ionkina, A.; Prescher, J. A. ``Multicomponent bioluminescence imaging in vivo." \textit{Manuscript in preparation}.
@@ -377,7 +381,12 @@ Buenos Aires, Agentina
 \ssitem Steinhardt, R. C.; \underline{Rathbun, C. M.}; Krull, B. T.; Yu, J. M.; Yang Y.; Nguyen, B. D.; Kwon, J.; McCutcheon, D. C.; Jones, K. A.; Furche, F.; Prescher, J. A. ``Brominated Luciferins are Versatile Bioluminescent Probes." \textit{ChemBioChem}, \textbf{2016}, \textit{18}, 96.
 
 \ssitem Steinhardt, R. C.; O'Neill, J. M.; \underline{Rathbun, C. M.}; McCutcheon, D. C.; Paley, M. A.; Prescher, J. A. ``Design and Synthesis of an Alkynyl Luciferin Analogue for Bioluminescence Imaging." \textit{Chem. Eur. J.}, \textbf{2016}, \textit{22}, 3671.
-
+\setcounter{saveenum}{\value{enumi}}
+\end{enumerate}
+\newpage\makeheading{Colin M. Rathbun}
+\vspace{6pt}
+\begin{enumerate}
+	\setcounter{enumi}{\value{saveenum}}
 \ssitem Chen, I. H.; Kou, K. G. M.; Le, D. N.; \underline{Rathbun, C. M.}; Dong, V. M. ``Recognition and Site-Selective Transformation of Monosaccharides by Using Copper(II) Catalysis." \textit{Chem. Eur. J.}, \textbf{2014}, \textit{20}, 5013.
 
 \ssitem Lutz, J. P.; \underline{Rathbun, C. M.}; Stevenson, S. M.; Powell, B. M.; Boman, T. S.; Baxter, C. E.; Zona, J. M.; Johnson, J. B. ``Rate-Limiting Step of the Rh-Catalyzed Carboacylation of Alkenes: C-C Bond Activation or Migratory Insertion?" \textit{J. Am. Chem. Soc.}, \textbf{2012}, \textit{134}, 715.
@@ -422,6 +431,20 @@ Buenos Aires, Agentina
 
 \vspace{12pt}
 
+{\textbf{Claremont McKenna, Pitzer, and Scripps Colleges}}, Claremont, CA
+\begin{outerlist}
+\item[] \textit{Guest Lecturer} \hfill \textbf{October 2, 2017}
+	\begin{innerlist}
+	\item Presented current research to a chemistry class with content tailored to topics currently being covered. Incorporated breakout discussions to keep students engaged with the material.
+	\end{innerlist}
+\end{outerlist}
+
+%% USE THIS WHEN YOU NEED A NEW PAGE %%%%%%%%
+\newpage\makeheading{Colin M. Rathbun}
+%
+\vspace{6pt}
+
+%%%%%%%%%
 %\href{http://www.job1.com}
 {\textbf{University of California, Irvine}},
 Irvine, CA
